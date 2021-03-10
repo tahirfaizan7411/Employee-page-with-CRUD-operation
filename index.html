@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+      <head>
+	       
+	        <title>
+			      Employee details 
+            </title>
+			<link rel="stylesheet" href="style.css">
+	
+        </head>
+	
+        <body>
+		    <div class="title">
+			<h1> Employee details</h1>
+			<p> This can perform CRUD operation</p>
+		      <br></br>
+			  <table>
+			         <tr>
+					    <td> 
+						 <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+						 <div>
+						  <label>Full Name*:</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+						  <input type="text" name="fullName" id="fullName" pattern="[a-zA-Z'.']+">
+						  </div>
+						  
+						  <div>
+						  <label>Emp Code*:</label><label class="validation-error hide" id="fullempCodeValidationError">This field is required.</label>
+						  <input type="text" name="empCode" id="empCode" pattern="[A-Z0-9]+">
+						  </div>
+						  
+						  <div>
+						  <label>Salary:</label>
+						  <input type="text" name="salary" id="salary" pattern="[0-9]+">
+						  </div>
+						  
+						  <div>
+						  <label>City:</label>
+						  <input type="text" name="city" id="city" pattern="[a-zA-Z]+">
+						  </div>
+						  
+						  <div class="form-action-buttons">
+						  <input type="submit" value="Submit">
+						  </div>
+						  </form>
+						</td>
+                             <td>
+                               <table class="list" id="employeelist">
+							       <thead>
+	                                     <tr>
+                                             <th>Full Name</th>
+                                             <th>Emp Code</th>
+                                             <th>Salary</th>
+                                             <th>City</th>
+                                             <th></th>
+                                        </tr>
+									</thead>
+									<tbody>
+									
+									</tbody>		
+                                </table>	
+                             </td>
+                        </tr>
+                     </table>
+					 
+                             							 
+		
+		
+		<script src="script.js"></script>
+		</body>
+		
+</html>		
